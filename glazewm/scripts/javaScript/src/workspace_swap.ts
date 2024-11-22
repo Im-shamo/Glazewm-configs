@@ -37,19 +37,21 @@ async function action() {
 
   if (focusedMonitor.x >= 0) {
     CLIENT.runCommand("move-workspace --direction left");
-    sleep(DELAY).then(() => CLIENT.runCommand("focus --workspace " + adjWorkspace.name));
-    sleep(DELAY).then(() => CLIENT.runCommand("move-workspace --direction right"));
+    await CLIENT.runCommand("focus --workspace " + adjWorkspace.name);
+    await CLIENT.runCommand("move-workspace --direction right");
   }
   else {
     CLIENT.runCommand("move-workspace --direction right");
-    sleep(DELAY).then(() => CLIENT.runCommand("focus --workspace " + adjWorkspace.name));
-    sleep(DELAY).then(() => CLIENT.runCommand("move-workspace --direction left"));
+    await CLIENT.runCommand("focus --workspace " + adjWorkspace.name);
+    await CLIENT.runCommand("move-workspace --direction left");
   }
 
-  console.log(`Focused workspace ${focusedWorkspace.name}`);
-  sleep(DELAY * 10).then(() => CLIENT.runCommand(`focus --workspace ${focusedWorkspace.name}`));
-  console.log(`Focused workspace ${adjWorkspace.name}`);
-  sleep(DELAY * 15).then(() => CLIENT.runCommand(`focus --workspace ${adjWorkspace.name}`));
+
+  // Workaound for cursor not being on the correct screen
+  await sleep(DELAY);
+  await CLIENT.runCommand(`focus --workspace ${focusedWorkspace.name}`);
+  await sleep(DELAY);
+  await CLIENT.runCommand(`focus --workspace ${adjWorkspace.name}`);
   
 }
 

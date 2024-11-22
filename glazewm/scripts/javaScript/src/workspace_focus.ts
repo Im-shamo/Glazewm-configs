@@ -10,13 +10,15 @@ CLIENT.onConnect(action);
 exit(DELAY * 1000);
 
 async function action() {
-  function cursorFix() {
+  async function cursorFix() {
   // Workaound for cursor not being on the correct screen
   if (!focusedWorkspace) {
     return;
   }
-  sleep(DELAY * 10).then(() => CLIENT.runCommand(`focus --workspace ${focusedWorkspace.name}`));
-  sleep(DELAY * 10).then(() => CLIENT.runCommand(`focus --workspace ${toBeFocusedWorkspaceName}`));
+  await sleep(DELAY);
+  await CLIENT.runCommand(`focus --workspace ${focusedWorkspace.name}`);
+  await sleep(DELAY);
+  await CLIENT.runCommand(`focus --workspace ${toBeFocusedWorkspaceName}`);
   }
   const { monitors } = await CLIENT.queryMonitors();
   const { workspaces } = await CLIENT.queryWorkspaces();
@@ -49,7 +51,7 @@ async function action() {
   // console.log("-------------------------------");
 
   if (!toBeFocusedWorkspace) {
-    CLIENT.runCommand(`focus --workspace ${toBeFocusedWorkspaceName}`);
+    await CLIENT.runCommand(`focus --workspace ${toBeFocusedWorkspaceName}`);
     return;
   }
 
@@ -59,7 +61,7 @@ async function action() {
   }
 
   if (toBeFocusedMonitor.id === focusedMonitor.id) {
-    CLIENT.runCommand(`focus --workspace ${toBeFocusedWorkspaceName}`);
+    await CLIENT.runCommand(`focus --workspace ${toBeFocusedWorkspaceName}`);
     return;
   }
 
@@ -73,10 +75,10 @@ async function action() {
     // move to Left
     if (getWorkspaceShowingOnMonitor(toBeFocusedMonitor)?.id === toBeFocusedWorkspace.id) {
       // Swap
-      CLIENT.runCommand("move-workspace --direction left");
+      await CLIENT.runCommand("move-workspace --direction left");
     }
-    sleep(DELAY).then(() => CLIENT.runCommand(`focus --workspace ${toBeFocusedWorkspaceName}`));
-    sleep(DELAY).then(() => CLIENT.runCommand("move-workspace --direction right"));
+    await CLIENT.runCommand(`focus --workspace ${toBeFocusedWorkspaceName}`);
+    await CLIENT.runCommand("move-workspace --direction right");
     cursorFix();
   }
   else if (focusedMonitor.x < toBeFocusedMonitor.x) {
@@ -85,8 +87,8 @@ async function action() {
       // Swap
       CLIENT.runCommand("move-workspace --direction right");
     }
-    sleep(DELAY).then(() => CLIENT.runCommand(`focus --workspace ${toBeFocusedWorkspaceName}`));
-    sleep(DELAY).then(() => CLIENT.runCommand("move-workspace --direction left"));
+    await CLIENT.runCommand(`focus --workspace ${toBeFocusedWorkspaceName}`);
+    await CLIENT.runCommand("move-workspace --direction left");
     cursorFix();
   }
 }
