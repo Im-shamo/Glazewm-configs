@@ -1,0 +1,76 @@
+[2m2024-11-02T02:49:07.333237Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m did not find expected key at line 272 column 50, while parsing a block mapping at line 272 column 5
+[2m2024-11-02T03:55:06.540125Z[0m [31mERROR[0m [2mglazewm::common::commands::shell_exec[0m[2m:[0m [3merr_message[0m[2m=[0m"Failed to execute 'vscode'.\n\nError: The operation was canceled by the user. (0x800704C7)"
+[2m2024-11-02T06:32:38.991929Z[0m [31mERROR[0m [2mglazewm::common::commands::shell_exec[0m[2m:[0m [3merr_message[0m[2m=[0m"Failed to execute 'vscode'.\n\nError: The operation was canceled by the user. (0x800704C7)"
+[2m2024-11-02T06:34:31.559750Z[0m [31mERROR[0m [2mglazewm::common::commands::shell_exec[0m[2m:[0m [3merr_message[0m[2m=[0m"Failed to execute 'vscode'.\n\nError: The operation was canceled by the user. (0x800704C7)"
+[2m2024-11-03T03:22:52.236011Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m Another instance of the application is already running.
+[2m2024-11-03T03:23:10.230751Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m Another instance of the application is already running.
+[2m2024-11-03T07:21:15.867939Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m did not find expected hexadecimal number at line 307 column 40, while parsing a quoted scalar at line 307 column 16
+[2m2024-11-03T07:21:58.766060Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m did not find expected hexadecimal number at line 311 column 37, while parsing a quoted scalar at line 311 column 16
+[2m2024-11-03T07:22:11.697223Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m did not find expected hexadecimal number at line 311 column 37, while parsing a quoted scalar at line 311 column 16
+[2m2024-11-03T07:22:50.041291Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m did not find expected hexadecimal number at line 311 column 38, while parsing a quoted scalar at line 311 column 16
+[2m2024-11-06T13:07:27.591604Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m channel closed
+[2m2024-11-12T12:22:46.439757Z[0m [31mERROR[0m [2mglazewm::common::commands::shell_exec[0m[2m:[0m [3merr_message[0m[2m=[0m"Failed to execute 'test.ps1'.\n\nError: The operation was canceled by the user. (0x800704C7)"
+[2m2024-11-16T16:51:23.185855Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m channel closed
+[2m2024-11-16T16:51:25.390815Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m channel closed
+[2m2024-11-16T16:51:30.421501Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m channel closed
+[2m2024-11-16T16:51:41.893102Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m channel closed
+[2m2024-11-16T16:52:47.519083Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m channel closed
+[2m2024-11-16T16:52:59.064554Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m channel closed
+[2m2024-11-16T16:53:01.146165Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m channel closed
+[2m2024-11-16T16:53:24.721247Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m channel closed
+[2m2024-11-16T16:53:27.050400Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m channel closed
+[2m2024-11-16T16:53:29.564266Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m channel closed
+[2m2024-11-16T16:53:42.517247Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m channel closed
+[2m2024-11-16T16:54:57.839873Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m channel closed
+[2m2024-11-16T16:55:04.715728Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m channel closed
+[2m2024-11-16T16:55:08.950346Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m channel closed
+[2m2024-11-16T16:55:33.155424Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m channel closed
+[2m2024-11-16T16:55:39.081692Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m channel closed
+[2m2024-11-16T16:59:18.787111Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m channel closed
+[2m2024-11-16T16:59:19.919680Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m channel closed
+[2m2024-11-16T17:00:13.231463Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m channel closed
+[2m2024-11-16T17:00:14.641419Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m channel closed
+[2m2024-11-16T17:00:17.604277Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m channel closed
+[2m2024-11-16T17:00:18.756181Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m channel closed
+[2m2024-11-16T17:00:19.064684Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m channel closed
+[2m2024-11-16T17:00:19.528068Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m channel closed
+[2m2024-11-16T17:00:38.419660Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m channel closed
+[2m2024-11-16T17:00:40.526802Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m channel closed
+[2m2024-11-16T17:00:41.074792Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m channel closed
+[2m2024-11-16T17:00:41.597839Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m channel closed
+[2m2024-11-16T17:00:42.080726Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m channel closed
+[2m2024-11-16T17:01:47.530853Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m channel closed
+[2m2024-11-16T17:01:48.636629Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m channel closed
+[2m2024-11-16T17:02:10.551238Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m channel closed
+[2m2024-11-16T17:02:12.206459Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m channel closed
+[2m2024-11-16T17:02:13.992042Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m channel closed
+[2m2024-11-16T17:02:23.411692Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m channel closed
+[2m2024-11-16T17:02:24.440887Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m channel closed
+[2m2024-11-16T17:02:24.982588Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m channel closed
+[2m2024-11-16T17:03:07.419554Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m channel closed
+[2m2024-11-16T17:03:09.156360Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m channel closed
+[2m2024-11-16T17:03:10.549970Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m channel closed
+[2m2024-11-16T17:07:35.378248Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m channel closed
+[2m2024-11-16T17:07:36.207548Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m channel closed
+[2m2024-11-17T04:07:23.839965Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m channel closed
+[2m2024-11-17T04:11:36.843644Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m channel closed
+[2m2024-11-17T04:11:38.299507Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m channel closed
+[2m2024-11-17T04:11:42.261597Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m channel closed
+[2m2024-11-17T04:11:44.452276Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m channel closed
+[2m2024-11-17T04:11:53.790189Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m channel closed
+[2m2024-11-17T04:11:55.388846Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m channel closed
+[2m2024-11-17T04:11:56.945692Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m channel closed
+[2m2024-11-17T04:21:18.392876Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m channel closed
+[2m2024-11-17T04:21:20.837047Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m channel closed
+[2m2024-11-17T04:21:21.200698Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m channel closed
+[2m2024-11-17T04:21:21.641879Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m channel closed
+[2m2024-11-17T04:24:36.289945Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m channel closed
+[2m2024-11-17T04:24:38.500044Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m channel closed
+[2m2024-11-17T04:24:38.992145Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m channel closed
+[2m2024-11-17T04:24:39.496534Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m channel closed
+[2m2024-11-17T05:39:03.252391Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m keybindings[28].commands: unrecognized subcommand
+ at line 258 column 15
+[2m2024-11-17T05:40:16.634778Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m keybindings[30].commands: unrecognized subcommand
+ at line 262 column 15
+[2m2024-11-21T14:36:34.570094Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m did not find expected hexadecimal number at line 330 column 51, while parsing a quoted scalar at line 330 column 16
+[2m2024-11-21T14:36:37.785829Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m did not find expected hexadecimal number at line 330 column 51, while parsing a quoted scalar at line 330 column 16
