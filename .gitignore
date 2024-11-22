@@ -1,0 +1,41 @@
+glazewm/scripts/javaScript/lib-cov
+glazewm/scripts/javaScript/*.seed
+glazewm/scripts/javaScript/*.log
+glazewm/scripts/javaScript/*.csv
+glazewm/scripts/javaScript/*.dat
+glazewm/scripts/javaScript/*.out
+glazewm/scripts/javaScript/*.pid
+glazewm/scripts/javaScript/*.gz
+glazewm/scripts/javaScript/*.swp
+
+glazewm/scripts/javaScript/pids
+glazewm/scripts/javaScript/logs
+glazewm/scripts/javaScript/results
+glazewm/scripts/javaScript/tmp
+
+# Build
+glazewm/scripts/javaScript/public/css/main.css
+
+# Coverage reports
+glazewm/scripts/javaScript/coverage
+
+# API keys and secrets
+glazewm/scripts/javaScript/.env
+
+# Dependency directory
+glazewm/scripts/javaScript/node_modules
+glazewm/scripts/javaScript/bower_components
+
+# Editors
+glazewm/scripts/javaScript/.idea
+glazewm/scripts/javaScript/*.iml
+
+# OS metadata
+glazewm/scripts/javaScript/.DS_Store
+glazewm/scripts/javaScript/Thumbs.db
+
+# Ignore built ts files
+glazewm/scripts/javaScript/dist/**/*
+
+# ignore yarn.lock
+glazewm/scripts/javaScript/yarn.lock
