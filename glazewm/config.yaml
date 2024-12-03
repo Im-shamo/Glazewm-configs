@@ -58,7 +58,7 @@ window_effects:
     # Change the corner style of the window's frame.
     # ** Exclusive to Windows 11 due to API limitations.
     corner_style:
-      enabled: true
+      enabled: false
       # Allowed values: 'square', 'rounded', 'small_rounded'.
       style: 'rounded'
 
@@ -132,6 +132,9 @@ window_rules:
         window_title: { regex: '.*? - Peek' }
       - window_process: { equals: 'Lively' }
         window_class: { regex: 'HwndWrapper' }
+
+      # Games
+      - window_title: { equals: "osu!"}
 
 binding_modes:
   # When enabled, the focused window can be resized via arrow keys or HJKL.
@@ -323,9 +326,9 @@ keybindings:
   # Application Shortcuts
   - commands: ["shell-exec firefox"]
     bindings: ["alt+b"]
-  - commands: ["shell-exec code"]
+  - commands: ["shell-exec --hide-window code"]
     bindings: ["alt+c"]
 
   # Custom Scripts
   - commands: ["shell-exec --hide-window node %HOMEPATH%\\.glzr\\glazewm\\scripts\\javaScript\\dist\\workspace_swap.js"]
-    bindings: ["alt+`"]
+    bindings: ["alt+oem_tilde"]
