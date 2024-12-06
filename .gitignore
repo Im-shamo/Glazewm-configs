@@ -39,3 +39,5 @@ glazewm/scripts/javaScript/dist/**/*
 
 # ignore yarn.lock
 glazewm/scripts/javaScript/yarn.lock
+
+glazewm/errors.log
