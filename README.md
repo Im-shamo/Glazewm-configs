@@ -16,3 +16,18 @@ Zebar has not been customized yet as I am unfamiliar with HTML, CSS and JavaScri
 
 - Workspace swapping between Monitors
   - Swaps workspace between monitors
+### Installation
+1. **Install node.js**
+   - I recomand installing nvm-windows: https://github.com/coreybutler/nvm-windows
+     
+2. **Install GlazeWM-js**
+   - https://github.com/glzr-io/glazewm-js
+     
+3. **Get the scripts**
+   - Download from release
+   - Alternalively, git clone and build it yourself
+     1. Navigate in to [glazewm/scripts](glazewm/scripts)
+     2. Build the script you want with `tsc`
+
+4. **Change glazewm config**
+   - Follow my [glazewm config](glazewm/config.yaml)
