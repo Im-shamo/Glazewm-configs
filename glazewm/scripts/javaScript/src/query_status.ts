@@ -25,7 +25,7 @@ async function action() {
 		subscribeAction
 	);
 
-	console.log("test");
+	
 }
 
 function print_item(item: any, index: number) {
