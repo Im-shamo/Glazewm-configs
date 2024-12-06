@@ -36,22 +36,14 @@ async function action() {
   }
 
   if (focusedMonitor.x >= 0) {
-    CLIENT.runCommand("move-workspace --direction left");
+    await CLIENT.runCommand("move-workspace --direction left");
     await CLIENT.runCommand("focus --workspace " + adjWorkspace.name);
     await CLIENT.runCommand("move-workspace --direction right");
   }
   else {
-    CLIENT.runCommand("move-workspace --direction right");
+    await CLIENT.runCommand("move-workspace --direction right");
     await CLIENT.runCommand("focus --workspace " + adjWorkspace.name);
     await CLIENT.runCommand("move-workspace --direction left");
-  }
-
-
-  // Workaound for cursor not being on the correct screen
-  await sleep(DELAY);
-  await CLIENT.runCommand(`focus --workspace ${focusedWorkspace.name}`);
-  await sleep(DELAY);
-  await CLIENT.runCommand(`focus --workspace ${adjWorkspace.name}`);
-  
+  }  
 }
 
