@@ -41,3 +41,6 @@ glazewm/scripts/javaScript/dist/**/*
 glazewm/scripts/javaScript/yarn.lock
 
 glazewm/errors.log
+
+# releases
+**/releases
