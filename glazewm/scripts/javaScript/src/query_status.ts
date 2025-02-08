@@ -19,13 +19,10 @@ async function action() {
 	console.log("\n------------ Windows ------------");
 	windows.forEach(print_item);
 
-
 	const unlisten = await client.subscribe(
 		WmEventType.FOCUS_CHANGED,
 		subscribeAction
 	);
-
-	
 }
 
 function print_item(item: any, index: number) {

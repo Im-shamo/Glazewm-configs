@@ -69,8 +69,7 @@ async function action() {
     }
     await CLIENT.runCommand(`focus --workspace ${toBeFocusedWorkspaceName}`);
     await CLIENT.runCommand("move-workspace --direction right");
-  }
-  else if (focusedMonitor.x < toBeFocusedMonitor.x) {
+  } else if (focusedMonitor.x < toBeFocusedMonitor.x) {
     // move to Right
     if (getWorkspaceShowingOnMonitor(toBeFocusedMonitor)?.id === toBeFocusedWorkspace.id) {
       // Swap

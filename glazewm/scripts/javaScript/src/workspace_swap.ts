@@ -1,5 +1,5 @@
 import { WmClient } from "glazewm";
-import { getFocusedWorkspace, exit, getFocusedMonitorFromWorkspace, getWorkspaceShowingOnMonitor, sleep, fixCursorLocation } from "./helper_functions"
+import { getFocusedWorkspace, exit, getFocusedMonitorFromWorkspace, getWorkspaceShowingOnMonitor } from "./helper_functions"
 import { assert } from "console";
 
 let DELAY = 20; // ms
@@ -12,7 +12,6 @@ exit(DELAY * 1000);
 async function action() {
   const { monitors } = await CLIENT.queryMonitors();
   const { workspaces } = await CLIENT.queryWorkspaces();
-  const { focused } = await CLIENT.queryFocused();
 
   if (monitors.length != 2) {
     console.log("There is should be 2 monitors");
@@ -39,8 +38,7 @@ async function action() {
     await CLIENT.runCommand("move-workspace --direction left");
     await CLIENT.runCommand("focus --workspace " + adjWorkspace.name);
     await CLIENT.runCommand("move-workspace --direction right");
-  }
-  else {
+  } else {
     await CLIENT.runCommand("move-workspace --direction right");
     await CLIENT.runCommand("focus --workspace " + adjWorkspace.name);
     await CLIENT.runCommand("move-workspace --direction left");

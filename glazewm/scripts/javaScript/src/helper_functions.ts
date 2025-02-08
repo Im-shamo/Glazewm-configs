@@ -14,7 +14,6 @@ export function getWorkspaceFromWindow(window: Window, workspaces: Array<Workspa
     }
   }
   return undefined;
-
 }
 
 export function getMonitorFromWorkspace(workspace: Workspace, monitors: Monitor[]): Monitor | undefined {
@@ -25,9 +24,7 @@ export function getWorkspaceFromFocused(focused: Workspace | Window, workspaces:
   if (focused.type === ContainerType.WORKSPACE) {
     return focused;
   }
-
   return getWorkspaceFromWindow(focused, workspaces);
-
 }
 
 export function getFocusedWorkspace(workspaces: Workspace[]): Workspace | undefined {
@@ -60,17 +57,6 @@ function windowSearch(container: Workspace | SplitContainer, wid: string): boole
     }
   }
   return found
-}
-
-export async function fixCursorLocation(client: WmClient) {
-  const { monitors } = await client.queryMonitors();
-  const { workspaces } = await client.queryWorkspaces();
-
-  const focusedWorkspace = getFocusedWorkspace(workspaces);
-  const focusedMonitor = getFocusedMonitorFromWorkspace(workspaces, monitors);
-
-  
-
 }
 
 export function exit(ms: number) {
