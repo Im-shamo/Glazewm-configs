@@ -113,6 +113,7 @@ workspaces:
   - name: '7'
     display_name: "7: Files"
   - name: '8'
+    display_name: "8: VM"
   - name: '9'
 
 window_rules:
@@ -137,6 +138,13 @@ window_rules:
       - window_title: { equals: "osu!"}
 
       - window_process: { equals: "msrdc" }
+  
+  - commands: ['set-floating']
+    match:
+      - window_process: { equals: "VirtualBox"}
+      - window_process: { equals: "VirtualBoxVM"}
+
+
 
 binding_modes:
   # When enabled, the focused window can be resized via arrow keys or HJKL.
