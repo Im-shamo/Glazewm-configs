@@ -44,3 +44,6 @@ glazewm/errors.log
 
 # releases
 **/releases
+
+# temp
+**/tmp*
