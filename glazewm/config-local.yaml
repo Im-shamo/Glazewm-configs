@@ -106,7 +106,7 @@ window_behavior:
       centered: true
 
       # Whether to show floating windows as always on top.
-      shown_on_top: true
+      shown_on_top: false
 
     fullscreen:
       # Maximize the window if possible. If the window doesn't have a
@@ -137,41 +137,37 @@ workspaces:
   - name: "0"
 
 window_rules:
-  - commands: ["ignore"]
+  - commands: ['ignore']
     match:
       # Ignores any Zebar windows.
-      - window_process: { equals: "zebar" }
+      - window_process: { equals: 'zebar' }
 
       # Ignores picture-in-picture windows for browsers.
-      - window_title: { regex: "[Pp]icture.in.[Pp]icture" }
-        window_class: { regex: "Chrome_WidgetWin_1|MozillaDialogClass" }
+      - window_title: { regex: '[Pp]icture.in.[Pp]icture' }
+        window_class: { regex: 'Chrome_WidgetWin_1|MozillaDialogClass' }
 
       # Ignore rules for various 3rd-party apps.
-      - window_process: { equals: "PowerToys" }
+      - window_process: { equals: 'PowerToys' }
         window_class: { regex: 'HwndWrapper\[PowerToys\.PowerAccent.*?\]' }
-      - window_process: { equals: "PowerToys" }
-        window_title: { regex: ".*? - Peek" }
-      - window_process: { equals: "Lively" }
-        window_class: { regex: "HwndWrapper" }
+      - window_process: { equals: 'PowerToys' }
+        window_title: { regex: '.*? - Peek' }
+      - window_process: { equals: 'Lively' }
+        window_class: { regex: 'HwndWrapper' }
 
       # Games
-      - window_title: { equals: "osu!" }
+      - window_title: { equals: "osu!"}
+      - window_process: { equals: "factorio" }
 
-      # Other
-      - window_title: { equals: "Task Manager" }
-
-      - window_process: { equals: "msrdc" }
-
-  - commands: ["set-floating"]
+  - commands: ['set-floating']
     match:
       - window_process: { equals: "VirtualBox" }
       - window_process: { equals: "VirtualBoxVM" }
+      # - window_process: { equals: "Taskmgr" }
 
-  - commands: ["set-transparency --opacity 0.95"]
+  - commands: ["set-transparency --opacity 0.98"]
     match:
       - window_process: { equals: "Code" }
-      - window_process: { equals: "gvim"}
-
+      - window_process: { equals: "gvim" }
 
 binding_modes:
   # When enabled, the focused window can be resized via arrow keys or HJKL.
@@ -380,5 +376,3 @@ keybindings:
     bindings: ["lalt+b"]
   - commands: ["shell-exec --hide-window code"]
     bindings: ["lalt+c"]
-  - commands: ["shell-exec --hide-window gvim"]
-    bindings: ["lalt+v"]
