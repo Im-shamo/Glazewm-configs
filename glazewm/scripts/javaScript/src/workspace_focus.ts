@@ -1,5 +1,6 @@
 import { WmClient } from "glazewm";
-import { sleep, exit, getFocusedWorkspace, getFocusedMonitorFromWorkspace, getMonitorFromWorkspace,
+import {
+  sleep, exit, getFocusedWorkspace, getFocusedMonitorFromWorkspace, getMonitorFromWorkspace,
   getWorkspaceShowingOnMonitor
 } from "./helper_functions"
 
@@ -23,9 +24,9 @@ async function action() {
 
   const toBeFocusedWorkspaceName = process.argv[2];
   const toBeFocusedWorkspace = workspaces.find(w => w.name === toBeFocusedWorkspaceName);
-  const toBeFocusedMonitor = toBeFocusedWorkspace === undefined ? undefined: getMonitorFromWorkspace(toBeFocusedWorkspace, monitors);
+  const toBeFocusedMonitor = toBeFocusedWorkspace === undefined ? undefined : getMonitorFromWorkspace(toBeFocusedWorkspace, monitors);
 
-  if (!focusedWorkspace || !focusedMonitor || !toBeFocusedWorkspaceName ) {
+  if (!focusedWorkspace || !focusedMonitor || !toBeFocusedWorkspaceName) {
     console.assert(focusedWorkspace, "focusedWorkspace is undefined");
     console.assert(focusedMonitor, "focusedMonitor is undefined");
     console.assert(toBeFocusedWorkspaceName, "toBeFocusedWorkspaceName is undefined");
@@ -60,7 +61,7 @@ async function action() {
   // console.log("\n");
   // console.log(toBeFocusedWorkspace);
   // console.log("----");
-  
+
   if (focusedMonitor.x >= toBeFocusedMonitor.x) {
     // move to Left
     if (getWorkspaceShowingOnMonitor(toBeFocusedMonitor)?.id === toBeFocusedWorkspace.id) {

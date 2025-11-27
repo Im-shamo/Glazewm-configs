@@ -20,7 +20,7 @@ export function getMonitorFromWorkspace(workspace: Workspace, monitors: Monitor[
   return monitors.find(m => m.id === workspace.parentId);
 }
 
-export function getWorkspaceFromFocused(focused: Workspace | Window, workspaces: Array<Workspace>): Workspace | undefined{
+export function getWorkspaceFromFocused(focused: Workspace | Window, workspaces: Array<Workspace>): Workspace | undefined {
   if (focused.type === ContainerType.WORKSPACE) {
     return focused;
   }
@@ -35,7 +35,7 @@ export function getFocusedMonitorFromWorkspace(workspaces: Workspace[], monitors
   return monitors.find(monitor => monitor.id === getFocusedWorkspace(workspaces)?.parentId);
 }
 
-export function getWorkspaceShowingOnMonitor(monitor: Monitor): Workspace | undefined{
+export function getWorkspaceShowingOnMonitor(monitor: Monitor): Workspace | undefined {
   const workspaces = monitor.children;
   return workspaces.find(workspace => workspace.id === monitor.childFocusOrder[0]);
 }

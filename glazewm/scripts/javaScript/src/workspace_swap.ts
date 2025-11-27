@@ -42,6 +42,6 @@ async function action() {
     await CLIENT.runCommand("move-workspace --direction right");
     await CLIENT.runCommand("focus --workspace " + adjWorkspace.name);
     await CLIENT.runCommand("move-workspace --direction left");
-  }  
+  }
 }
 
